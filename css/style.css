@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  background-color: #47276c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header{
+  max-height: 20.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../image/bg-header.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+
+.logo{
+  height: 10rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: #F7AB29;
+  margin: 2rem 0 0 0;
+  background-image: url("../image/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title{
+  color: #F7AB29;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.description{
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.fadeBottom{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 6rem 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, transparent, #47276c);
+  z-index: -1;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.btn-principal{
+  text-align: center;
+  background-color: #F7AB29;
+  color: #47276c;
+  border: none;
+  max-width: 22.8125rem;
+  width: 100%;
+  border-radius: 50px;
+  margin: 0 2rem .75rem 2rem;
+  font-size: 1.125rem;
+  padding: 1.125rem .5rem;
+  cursor: pointer;
+}
+
+.btn-principal a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #47276c;
+}
+
+.btn-principal:hover{
+  background-color: #FFBD4D;
+}
+
+.group-whatsapp{
+  margin-top: 1.875rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.group{
+  margin: 0.75rem 0 0 1.5rem;
+  color: #808080;
+}
+
+.group a{
+  text-decoration: none;
+  color: #808080;
+}
+
+#hideWpp, #showWpp{
+  color: white;
+  text-decoration: none;
+}
+
+.group-telegram{
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+
+#hideTelegram, #showTelegram{
+  color: white;
+  text-decoration: none;
+}
+
+.details, .show, .hide:target{
+  display: none;
+}
+
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
+}
+
+hr{
+  border: none;
+  border-top: 3px dotted #808080;
+  height: 1px;
+  max-width: 22.8125rem;
+  width: 100%;
+  margin: 1rem 2rem;
+}
+
+.rede-social-title{
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.rede-social-description{
+  color: #808080;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.rede-social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 2.25rem;
+}
+
+.facebook{
+  height: 3.125rem;
+  width: 3.125rem;
+  background-color: #285F93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.twitter{
+  height: 3.125rem;
+  width: 3.125rem;
+  background-color: #42AEE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.twitch{
+  height: 3.125rem;
+  width: 3.125rem;
+  background-color: #7454AE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.instagram{
+  height: 3.125rem;
+  width: 3.125rem;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.fab{
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+footer{
+  margin: 2rem 0 .5rem 0;
+  text-align: center;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
