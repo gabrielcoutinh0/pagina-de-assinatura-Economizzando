@@ -42,7 +42,7 @@
           <div class="group"><a href="1" target="_blank">Grupo 1</a></div>
         </div>
       </div>-->
-      </div> 
+      </div>
       <hr>
 
       <h1 class="rede-social-title">Siga-nos nas<br>Redes Sociais</h1>
@@ -66,7 +66,7 @@
   </div>
   <footer>
     <hr>
-    Copyright 2022 © Todos os direitos reservados a Economizzando.
+    Copyright 2022 © Todos os direitos reservados a <a href="https://economizzando.com.br/" target="_blank">Economizzando</a>.
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script>
@@ -77,7 +77,7 @@
       }).then(function(response) {
         return response.json();
       }).then(function(data){
-        
+
         data.map(link => {
           $("#content").append(`
             <div class="btn-principal"><a href="${link.url}" target="_blank">${link.descricao}</a></div>
